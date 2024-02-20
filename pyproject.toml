@@ -1,0 +1,15 @@
+[project]
+name = "chroncat"
+version = "0.1.0"
+description = "chroncat"
+readme = "README.md"
+requires-python = ">=3.8, <4.0"
+
+[tool.nonebot]
+adapters = [
+    {name = "RedProtocol", module_name = "nonebot.adapters.red"},
+    {name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11"}
+]
+plugins = ["nonebot_plugin_apscheduler", "nonebot_plugin_memes"]
+plugin_dirs = ["src/plugins"]
+builtin_plugins = ["echo"]
